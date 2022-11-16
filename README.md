@@ -3,11 +3,13 @@
 
 ## Backend Ayağa Kaldırma
 
-- Mongodb ve Redis'i yükleyebilmek için backend içerisindeki docker-compose dosyası çalıştırılmalıdır. (Bilgisayarınızda docker yüklü olması gerekir.) Bunun için backend dizinine gidilerek docker-compose up komutu çalıştırışlır.
+- Mongodb ve Redis'i yükleyebilmek için backend içerisindeki docker-compose dosyası çalıştırılmalıdır. ( Bilgisayarınızda docker ve compose yüklü olmalıdır. [Docker indirmek ve bilgi almak için tıklayın](https://docs.docker.com/get-docker/ "Docker Web Site"))
+ Bunun için backend dizinine gidilerek docker-compose up komutu çalıştırışlır.
 
 -  `cd backend`
 - `docker-compose up -d`
  
+
 
 - backend dizininde .env dosyası oluşturulur ve içerisine gerekli bilgiler girilir. (Örnek aşağıda yer almaktadır.)
  
