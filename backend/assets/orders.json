@@ -1,0 +1,52 @@
+[
+{
+  "_id": {"$oid":"60cca7680fd0140bf24740f2"},
+  "items": [ 
+      {"$oid":"60796121880e7cf6bd9ef8b1"},
+      {"$oid":"6079611f880e7cf6bd9ef8b0"}
+    
+  ],
+  "user": {"$oid":"60cc84ca0fd0140bf24740f0"},
+  "adress": "Sultanbeyli",
+  "createdAt": {"$date" :"2021-06-18T14:02:16.556Z"},
+  "__v": 0
+},
+
+
+{
+  "_id": {"$oid":"60cca7ac0fd0140bf24740f3"},
+  "items": [ 
+    {"$oid":"60796121880e7cf6bd9ef8b1"},
+    {"$oid":"6079611f880e7cf6bd9ef8b0"}
+  ],
+  "user": {"$oid":"60cc84ca0fd0140bf24740f0"},
+  "adress": "Ordu",
+  "createdAt": {"$date" :"2021-06-18T14:02:16.556Z"},
+  "__v": 0
+},
+
+{
+  "_id": {"$oid":"60cdd4e4afb7ad2b900a9a55"},
+  "items": [ 
+      {"$oid":"6078a0a796704abb0eee7f09"},
+      {"$oid":"6078a0b696704abb0eee7f0a"},
+      {"$oid":"6078a0a496704abb0eee7f08"},
+      {"$oid":"60783a5adfb6e19e4a2e6b3b"}
+  ],
+  "user": {"$oid":"60cdd4cdafb7ad2b900a9a54"},
+  "adress": "Ankara/Çankaya",
+  "createdAt": {"$date" :"2021-06-18T14:02:16.556Z"},
+  "__v": 0
+},
+
+{
+  "_id": {"$oid":"60ce01a1afb7ad2b900a9a5d"},
+  "items": [ 
+      {"$oid":"60cdfd3bafb7ad2b900a9a59"}
+  ],
+  "user": {"$oid":"60ce0166afb7ad2b900a9a5c"},
+  "adress": "İzmir/Karşıyaka",
+  "createdAt": {"$date" :"2021-06-18T14:02:16.556Z"},
+  "__v": 0
+}
+]
