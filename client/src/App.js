@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/index";
 //pages
 import SignIn from "./Pages/Auth/SignIn";
 import SignUp from "./Pages/Auth/SignUp";
-import Products from "./Pages/Products/index";
+import Products from "./Pages/Products";
 
 function App() {
   return (
