@@ -6,13 +6,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 //ChakraUI'ı ChakraProvider ile sarmalayarak kuruyoruz.
 import { ChakraProvider } from '@chakra-ui/react'
+//React Query import edeceğiz.
+import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+
+const queryClient = new QueryClient()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
