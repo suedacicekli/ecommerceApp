@@ -5,14 +5,19 @@
     border-bottom: solid 1px #e2e8f0;
     line-height: 2px;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav .left {
     display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .nav .left .menu {
     display: flex;
+    justify-content:center;
     margin-left: 40px;
 }
 
@@ -30,4 +35,17 @@
 }
 .nav .right a:first-child{
    margin-right:10px;   
+}
+.logoImage{
+    width: 8rem;
+}
+.navItems{
+    font-weight: bold;
+}
+.navItemsPassive{
+    font-weight: bold;
+    opacity: 40%;
+    cursor: default;
+    touch-action: none;
+    pointer-events: none;
 }

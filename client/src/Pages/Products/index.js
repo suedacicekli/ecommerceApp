@@ -13,10 +13,9 @@ function Products() {
     if (error) return 'An error has occurred: ' + error.message
 
     console.log(data)
-
     return (
         <div>
-            <Grid templateColumns='repeat(4, 1fr)' gap={4}>
+            <Grid templateColumns='repeat(4, 1fr)' gap={20}>
                 {data.map((item, key) => (
                     <Card key={key} item={item} />
                 ))}

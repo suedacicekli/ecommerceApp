@@ -7,8 +7,8 @@ import moment from "moment";
 function Card({ item }) {
     return (
         <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p="3">
-            <Link to="#/">
-                <Image className="image" src={item.photos} alt="product" loading="lazy" />
+            <Link to={`/product/${item._id}`}>
+                <Image className="image" src={item.photos[0]} alt="product" loading="lazy" resizable="yes" />
                 <Box p="6">
                     <Box d="plex" alignItems="baseline">
                         {moment(item.createdAt).format('DD.MM.YYYY')}

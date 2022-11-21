@@ -1,7 +1,9 @@
-import React from "react";
+import { React } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import { Button } from "@chakra-ui/react";
+import { Button, Image } from "@chakra-ui/react";
+
+const logo = require("../../assets/logopapatya.png");
 
 function Navbar() {
   return (
@@ -9,21 +11,27 @@ function Navbar() {
       <div className={styles.left}>
         <div className="logo">
           <Link to="/">
-            ECommerce
+            <Image src={logo} className={styles.logoImage} />
           </Link>
         </div>
         <ul className={styles.menu}>
           <li>
-            <Link to="/"> Products </Link>
+            <Link to="/" className={styles.navItems}> Products </Link>
+          </li>
+          <li>
+            <Link to="/" className={styles.navItemsPassive} touchable={false}> Map </Link>
+          </li>
+          <li>
+            <Link to="/" className={styles.navItemsPassive}> Orders </Link>
           </li>
         </ul>
       </div>
       <div className={styles.right}>
         <Link to="/signin">
-          <Button colorScheme="purple">Login</Button>
+          <Button colorScheme="green">Login</Button>
         </Link>
         <Link to="/signup">
-          <Button colorScheme="purple">Register</Button>
+          <Button colorScheme="green">Register</Button>
         </Link>
       </div>
     </nav>
