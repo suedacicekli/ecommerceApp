@@ -5,11 +5,21 @@ import './reset.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 //ChakraUI'ı ChakraProvider ile sarmalayarak kuruyoruz.
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
 //React Query import edeceğiz.
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
+
+    }
+  }
+}
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +28,7 @@ root.render(
       <ChakraProvider>
         <App />
       </ChakraProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </React.StrictMode>
 );

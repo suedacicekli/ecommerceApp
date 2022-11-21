@@ -7,6 +7,7 @@ import SignIn from "./Pages/Auth/SignIn";
 import SignUp from "./Pages/Auth/SignUp";
 import Products from "./Pages/Products";
 
+
 function App() {
   return (
     <BrowserRouter>
