@@ -19,7 +19,7 @@ function Navbar() {
             <Link to="/" className={styles.navItems}> Products </Link>
           </li>
           <li>
-            <Link to="/" className={styles.navItemsPassive} touchable={false}> Map </Link>
+            <Link to="/" className={styles.navItemsPassive}> Map </Link>
           </li>
           <li>
             <Link to="/" className={styles.navItemsPassive}> Orders </Link>
@@ -31,7 +31,7 @@ function Navbar() {
           <Button colorScheme="green">Login</Button>
         </Link>
         <Link to="/signup">
-          <Button colorScheme="green">Register</Button>
+          <Button colorScheme="green">SignUp</Button>
         </Link>
       </div>
     </nav>

@@ -1,10 +1,16 @@
 import React from 'react'
+import { Flex, Box, Heading, FormControl, FormLabel } from '@chakra-ui/react';
+
 
 function SignIn() {
     return (
-        <div>
-            SignIn
-        </div>
+        <Flex align="center" justifyContent="center" width="full">
+            <Box pt={10}>
+                <Box textAlign="center">
+                    <Heading>Sign In</Heading>
+                </Box>
+            </Box>
+        </Flex>
     )
 }
 
